@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>KS'Protect - Anti-Raid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you can change the website icon by change the href link -->
+  <link rel="icon" type="image/png" href="./img/logo.png">
+
+<!------------------------------------------------------Easter Egg------------------------------------------------------->
+
+<!--▄▀█ █▀▄ █ █ ▄▀█ █▄ █ █▀▀ █▀▀ █▀▄   █▀▄ █ █▀ █▀▀ █▀█ █▀█ █▀▄   █▄▄ █▀█ ▀█▀   █ █ █ █▀▀ █▄▄ █▀ █ ▀█▀ █▀▀-->
+<!--█▀█ █▄▀ ▀▄▀ █▀█ █ ▀█ █▄▄ ██▄ █▄▀   █▄▀ █ ▄█ █▄▄ █▄█ █▀▄ █▄▀   █▄█ █▄█  █    ▀▄▀▄▀ ██▄ █▄█ ▄█ █ ░█░ ██▄-->
+
+<!------------------------------------------------------Easter Egg------------------------------------------------------->
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/coloring.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+  <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+  <link rel="stylesheet" type="text/css" href="./css/loading.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+  <!-- css end -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="on">
+  <div class="loading" id="loading-box">
+    <div class="loading-item"><div class="loading-progress"></div></div>
+  </div>
+  <main class="main">
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <div class="navbar-brand">
+            <!-- You can change it with Image if you want. -->
+            <span class="navbar-brand-txt"><a class="txt-bold type-1" href="/">KS'Protect</a></span>
+          </div>
+
+          <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+          <div class="navs" id="navs">
+            <!-- You can change the href value and the text value -->
+            <div class="navs-item notbtn"><a href="Commands.html" class="txt-uppercase">Commande</a></div>
+            <div class="navs-item notbtn"><a href="#" class="txt-uppercase">Documention</a></div>
+            <div class="navs-item notbtn"><a href="#" class="txt-uppercase">Support</a></div>
+            <div class="navs-item notbtn"><a href="#" class="txt-uppercase">Inviter le bot</a></div>
+            <div class="navs-item"><a href="#"><button class="btn txt-uppercase shadow-sm">Connexion</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->		
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="jumbotron-items">
+          <div class="jumbotron-item">
+            <span class="jumbotron-t">Pourquoi KS'Protect ?</span>
+            <p class="jumbotron-d">KS'Protect est un bot Discord anti-raid qui n'est pour l'instant pas certifié!</p>
+            <div class="jumbotron-buttons">
+              <button class="btn" onclick="location.href='#features'">Caractéristique</button>
+              <button class="btn" onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=1031141935546638336&permissions=4398046511103&scope=bot%20applications.commands'">Inviter KS'Protect</button>
+          </div>
+          <div class="jumbotron-item">
+            <img src="./img/img.svg" alt="image"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+    <span class="scroll-down"><i class="fas fa-arrow-down"></i></span>
+  </main>
+
+  <!-- features -->
+  <div class="features-box">
+    <h1 class="features-t" id="features">Fonctionnalité.</h1>
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <img class="feature-img" src="./img/feature1.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">L'anti-raid</h2>
+            <p class="feature-info-d">KS'Protect contient c'est protection,</p>
+            <p class="feature-info-d">L'anti-channel : Supprime un salon lors de la création de celui-ci, si limite de salon dépassé en quelque seconde, le bot bannira</p>
+            <p class="feature-info-d">Anti-Mass-Rôle : Banni un utilisateur créant/supprimant trop de rôle en quelque seconde.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature2.svg"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Feature 2</h2>
+            <p class="feature-info-d">Write Here About Your Bot Features.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature3.svg"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Feature 3</h2>
+            <p class="feature-info-d">Write Here About Your Bot Features.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- features end -->
+
+  <!-- services -->
+  <div class="services-box">
+    <h1 class="services-t" id="services">Nous servons actuellement</h1>
+    <div class="container">
+      <div class="services">
+        <div class="service">
+          <span><i class="fas fa-server"></i>90+ serveurs</span>
+        </div>
+        <div class="service">
+          <span><i class="fas fa-users"></i> 22.000+ utilisateurs</span>
+        </div>
+        <div class="service">
+          <span><i class="fas fa-hashtag"></i> 59 commandes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services end -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-items">
+        <div class="footer-item">
+          <span>Développeur et propriétaire</span>
+          <ul class="footer-ul">
+            <li><a>Développeur : Gabsamw²#2837</a></li>
+            <li><a>Développeur : Snow_Sky#4526</a></li>
+            <li><a>Propriétaire : BSB_KB9#7260</a></li>
+          </ul>
+        </div>				
+        <div class="footer-item">
+          <span>Lien</span>
+          <ul class="footer-ul">
+            <li><a href=" https://discord.gg/5ANS9B2ySw" class="otherlink">Support</a></li>
+            <li><a href=" https://discord.com/api/oauth2/authorize?client_id=1031141935546638336&permissions=4398046511103&scope=bot%20applications.commands" class="otherlink">Ajouter KS'Protect</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/cursor.js"></script>
+</body>
+</html>
