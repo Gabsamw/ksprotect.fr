@@ -1,8 +1,0 @@
-{
-  "name": "botwebsite",
-  "author": "Gabriel Wilman",
-  "publish": false,
-  "dependencies": {
-    "lib": "latest"
-  }
-}
